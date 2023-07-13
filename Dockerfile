@@ -13,4 +13,4 @@ ARG name=prometheus-what-active-users-exporter
 
 COPY --from=build --chown=nonroot:nonroot /app/index /bin/prometheus-what-active-users-exporter
 
-CMD [ "/bin/prometheus-what-active-users-exporter" ]
+ENTRYPOINT [ "/bin/prometheus-what-active-users-exporter" ]
